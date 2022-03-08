@@ -1,0 +1,84 @@
+.project-page{
+    width: 120rem;
+    margin: 5rem auto;
+}
+.project-page h1{
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
+}
+.project-type{
+    display: flex;
+    gap: 1rem;
+}
+
+.project-type button{
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 5px 1rem;
+    margin-bottom: 6rem;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+    background-color: var(--text-color);
+    color: #fff;
+    
+}
+
+.project-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.project{
+    display: flex;
+    gap: 5rem;
+}
+
+.project-text{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.project-text-title{
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 2.9rem;  
+}
+
+.project-text-detail{
+    font-size: 2.4rem;
+    line-height: 2.9rem; 
+}
+
+.project-text-tags{
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    text-align: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    
+}
+
+.project-text-tags span{
+    width: 14rem;
+    background: #F09819;
+    border-radius: 2rem;
+    padding: 8px;
+}
+
+.project-text-show{
+    font-size: 2.4rem;
+    margin-top: 8rem;
+    display: flex;
+    gap: 4rem;
+}
+
+.project-text-demo,
+.project-text-code{
+    display: flex;
+    gap: 1rem;
+}
