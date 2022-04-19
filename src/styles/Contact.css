@@ -1,0 +1,38 @@
+.contact-page{
+    /* width: 50%; */
+    /* margin: auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12rem;
+    color: #5B3703;
+    height: 100vh;
+    margin: 0;
+}
+
+.contact-page h1{
+    font-size: 6.4rem;
+    background: linear-gradient(105deg, #FF512F 0%, #F09819 100%);
+    -webkit-background-clip: text;
+    background-clip:text;
+    color: transparent
+
+}
+
+.contacts{
+    font-size: 3.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contacts-email{
+    display: flex;
+    gap: 1rem;
+}
+
+.contacts-media-link{
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
