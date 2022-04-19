@@ -66,18 +66,18 @@ export const group_icons2 = [
 
 export const social_icons = [
 	{
-		link: "https://www.linkedin.com/in/reihaneh-naderi-58b136112/",
-		logo: "./assets/icons/linkedin.svg",
+		link: "https://www.linkedin.com/in/reihaneh-hannah-naderi-58b136112/",
+		logo: "./assets/icons/link.svg",
 		alt: "linkedin",
 	},
 	{
 		link: "https://github.com/hannah68",
-		logo: "./assets/icons/fa_github-square.svg",
+		logo: "./assets/icons/light-github.svg",
 		alt: "github",
 	},
 	{
 		link: "mailto:reihaneh.naderi1989@gmail.com",
-		logo: "./assets/icons/gmail.svg",
+		logo: "./assets/icons/light-gmail.svg",
 		alt: "gmail",
 	},
 ];

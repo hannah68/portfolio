@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/About.css";
-import { Link } from "react-router-dom";
 import { group_icons1, group_icons2, social_icons } from "../data/aboutData";
 
 const About = () => {
@@ -9,19 +8,19 @@ const About = () => {
 			<div className="about-infos">
 				<div className="about-img-icon">
 					<img
-						src="./assets/images/mypic.png"
+						src="./assets/images/hana-img.png"
 						className="about-img"
 						alt="hannah pic"
 					/>
 					<div className="about-social-icons">
 						{social_icons.map((icon, index) => {
 							return (
-								<Link to={icon.link} key={index}>
+								<a href={icon.link} key={index}>
 									<img
 										src={icon.logo}
 										alt={icon.alt}
 									/>
-								</Link>
+								</a>
 							);
 						})}
 					</div>
