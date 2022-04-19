@@ -1,12 +1,10 @@
 .contact-page{
-    /* width: 50%; */
-    /* margin: auto; */
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 12rem;
     color: #5B3703;
-    height: 100vh;
+    height: 50vh;
     margin: 0;
 }
 
