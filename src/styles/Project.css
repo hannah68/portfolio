@@ -39,7 +39,7 @@
 }
 
 .project-text-detail{
-    font-size: 2.4rem;
+    font-size: 2rem;
     line-height: 2.9rem; 
 }
 
@@ -59,7 +59,7 @@
 }
 
 .project-text-show{
-    font-size: 2.4rem;
+    font-size: 2rem;
     margin-top: 2rem;
     display: flex;
     gap: 4rem;
@@ -69,4 +69,10 @@
 .project-text-code{
     display: flex;
     gap: 1rem;
+    cursor: pointer;
+}
+
+.project-text-demo{
+    color: grey;
+    cursor: none;
 }

@@ -54,8 +54,46 @@
     color: var(--text-color);
     width: 19.4rem;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .btn-contact{
-    border: 2px solid #CB7A04
+    border: 2px solid #CB7A04;
+    border: 2px solid var(--text-color);
 }
+
+.btn-project{
+    box-shadow:0 .5em 1em -.125em rgba(10,10,10,.1),0 0 0 1px rgba(10,10,10,.02);border:0;
+}
+
+@media only screen and (max-width: 1240px) {
+   .name{
+       font-size: 6rem;
+   }
+   .btn-container{
+       width: 40rem;
+   }
+   .info{
+       font-size: 2.5rem;
+   }
+   .btn{
+       width: 15rem;
+       font-size: 2rem;
+   }
+}
+
+@media only screen and (max-width: 988px) {
+    .name{
+        font-size: 4rem;
+    }
+    .btn-container{
+        width: 30rem;
+    }
+    .info{
+        font-size: 2rem;
+    }
+    .btn{
+        width: 12rem;
+        font-size: 1.5rem;
+    }
+ }
