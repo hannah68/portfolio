@@ -1,50 +1,41 @@
 .project-page{
     width: 120rem;
-    margin: 5rem auto;
+    margin: 0 auto;
 }
 .project-page h1{
-    margin-bottom: 2rem;
+    margin: 2rem 0;
     font-size: 2.4rem;
 }
-.project-type{
-    display: flex;
-    gap: 1rem;
-}
 
-.project-type button{
-    font-size: 2rem;
-    cursor: pointer;
-    padding: 5px 1rem;
-    margin-bottom: 6rem;
-    border-radius: 1rem;
-    outline: none;
-    border: none;
-    background-color: var(--text-color);
-    color: #fff;
-    
+
+.project-image img{
+    width: 47rem;
+    height: 32rem;
 }
 
 .project-container{
     display: flex;
     flex-direction: column;
+    gap: 9rem;
+    padding-bottom: 6rem;
 }
 
 
 .project{
+    width: 100%;
     display: flex;
     gap: 5rem;
 }
 
 .project-text{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    width: 100%;
 }
 
 .project-text-title{
     font-weight: bold;
     font-size: 2.4rem;
     line-height: 2.9rem;  
+    margin-bottom: 1.5rem;
 }
 
 .project-text-detail{
@@ -54,25 +45,22 @@
 
 .project-text-tags{
     font-weight: bold;
-    font-size: 1.8rem;
+    font-size: 1rem;
     line-height: 2.2rem;
-    text-align: center;
-    display: flex;
-    gap: 1rem;
-    justify-content: space-between;
-    
+    margin-bottom: 2.5rem;
 }
 
 .project-text-tags span{
-    width: 14rem;
+    width: 8rem;
     background: #F09819;
     border-radius: 2rem;
     padding: 8px;
+    margin-right: 1rem;
 }
 
 .project-text-show{
     font-size: 2.4rem;
-    margin-top: 8rem;
+    margin-top: 2rem;
     display: flex;
     gap: 4rem;
 }
