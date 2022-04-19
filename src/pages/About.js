@@ -1,109 +1,68 @@
-import React from 'react'
-import '../styles/About.css'
-import { Link } from "react-router-dom"
-
-const HannahLinkedin = "https://www.linkedin.com/in/reihaneh-naderi-58b136112/";
-const HannahGithub = "https://github.com/hannah68";
-const HannahGmail = "mailto:reihaneh.naderi1989@gmail.com";
-
+import React from "react";
+import "../styles/About.css";
+import { Link } from "react-router-dom";
+import { group_icons1, group_icons2, social_icons } from "../data/aboutData";
 
 const About = () => {
-
-  return (
+	return (
 		<div className="about-page">
 			<div className="about-infos">
 				<div className="about-img-icon">
-					<img src="./assets/images/mypic.png" className="about-img" alt='hannah pic'/>
+					<img
+						src="./assets/images/mypic.png"
+						className="about-img"
+						alt="hannah pic"
+					/>
 					<div className="about-social-icons">
-						<Link to={HannahGithub}>
-							<img src='./assets/images/fa_github-square.svg' alt='github icon'/>
-						</Link>
-						<Link to={HannahLinkedin}>
-                            <img src='./assets/images/linkedin.svg' alt='linkedin icon'/>
-						</Link>
-						<Link to={HannahGmail}>
-                            <img src='./assets/images/gmail.svg' alt='gmail icon'/>
-						</Link>
+						{social_icons.map((icon, index) => {
+							return (
+								<Link to={icon.link} key={index}>
+									<img
+										src={icon.logo}
+										alt={icon.alt}
+									/>
+								</Link>
+							);
+						})}
 					</div>
 				</div>
 				<div className="about-text">
 					<h1 className="about-text-title">ABOUT</h1>
-                    <span className="about-text-subtitle">myself</span>
+					<span className="about-text-subtitle">myself</span>
 					<p className="about-text-info">
-						I'm a self-taught junior front end developer. I studied marketing,
-						but I found my passion for web development. I love to challenge
-						myself and find solutions to problems. I build responsive websites
-						with clean and modern designs.My goal is to learn more about UI
-						effects and animations.
+                    I'm a junior full stack developer. I studied marketing, but I found my passion for web development. I started my journey as a self-taught and then completed an intensive coding bootcamp with Boolean Uk.
 					</p>
+                    <br/>
+                    <p className="about-text-info">Throughout my time with boolean, I have thoroughly enjoyed learning new programming languages and look forward to continuing to develop my technical skills even further. I describe myself as someone who always has a positive attitude and is not afraid to try new things.</p>
 				</div>
 			</div>
 			<div className="about-skills">
-                <h2>My Skills</h2>
-                <div className="skills-container">
-                    <div className="skill-row1">
-                        <div className="skill-groups1">
-                            <img src="./assets/images/javascript.svg" alt="javascript icon" />
-                            <span>Javascript</span>
-                        </div>
-                        <div className="skill-groups1">
-                            <img src="./assets/images/react.svg" alt="react icon" />
-                            <span>React</span>
-                        </div>
-                        <div className="skill-groups1">
-                            <img src="./assets/images/typescript.svg" alt="typescript icon" />
-                            <span>Typescript</span>
-                        </div>
-                        <div className="skill-groups1">
-                            <img src="./assets/images/node.svg" alt="node icon" />
-                            <span>Node.js</span>
-                        </div>
-                        <div className="skill-groups1">
-                            <img src="./assets/images/express.svg" alt="express icon" />
-                            <span>Express</span>
-                        </div>
-                        <div className="skill-groups1">
-                            <img src="./assets/images/prisma.svg" alt="prisma icon" />
-                            <span>Prisma</span>
-                        </div>
-                        
-                        
-                    </div>
-                    <div className="skill-row2">
-                        {/* <div className="skill-groups1">
-                            <img src="./assets/images/mongodb.svg" alt="" />
-                            <span>MongoDB</span>
-                        </div> */}
-                         <div className="skill-groups1">
-                            <img src="./assets/images/postgresql.svg" alt="postgress icon" />
-                            <span>PostgreSQL</span>
-                        </div>
-                        <div className="skill-groups1">
-                            <img src="./assets/images/sass.svg" alt="sass icon" />
-                            <span>SASS</span>
-                        </div>
-                        
-                        <div className="skill-groups1">
-                            <img src="./assets/images/figma.svg" alt="figma icon" />
-                            <span>Figma</span>
-                        </div>
-                        <div className="skill-groups1">
-                            <img src="./assets/images/html.svg" alt="html icon" />
-                            <span>HTML</span>
-                        </div>
-                        <div className="skill-groups1">
-                            <img src="./assets/images/css.svg" alt="css icon" />
-                            <span>CSS</span>
-                        </div>
-                        <div className="skill-groups1">
-                            <img src="./assets/images/bootstrap.svg" alt="bootstrap icon" />
-                            <span>Bootstrap</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+				<h2>My Skills</h2>
+				<div className="skills-container">
+					<div className="skill-row1">
+						{group_icons1.map((icon, index) => {
+							return (
+								<div className="skill-groups1" key={index}>
+									<img src={icon.img} alt={icon.alt} />
+									<span>{icon.title}</span>
+								</div>
+							);
+						})}
+					</div>
+					<div className="skill-row2">
+						{group_icons2.map((icon, index) => {
+							return (
+								<div className="skill-groups1" key={index}>
+									<img src={icon.img} alt={icon.alt} />
+									<span>{icon.title}</span>
+								</div>
+							);
+						})}
+					</div>
+				</div>
+			</div>
 		</div>
 	);
-}
+};
 
-export default About
+export default About;
