@@ -13,20 +13,16 @@ const About = () => {
 		<div className="about-page">
 			<div className="about-infos">
 				<div className="about-img-icon">
-					<img
-						src="./assets/images/mypic.png"
-						alt="hannah picture"
-						className="about-img"
-					/>
+					<img src="./assets/images/mypic.png" className="about-img" alt='hannah pic'/>
 					<div className="about-social-icons">
 						<Link to={HannahGithub}>
-							<img src='./assets/images/fa_github-square.svg'/>
+							<img src='./assets/images/fa_github-square.svg' alt='github icon'/>
 						</Link>
 						<Link to={HannahLinkedin}>
-                            <img src='./assets/images/linkedin.svg'/>
+                            <img src='./assets/images/linkedin.svg' alt='linkedin icon'/>
 						</Link>
 						<Link to={HannahGmail}>
-                            <img src='./assets/images/gmail.svg'/>
+                            <img src='./assets/images/gmail.svg' alt='gmail icon'/>
 						</Link>
 					</div>
 				</div>
@@ -47,45 +43,60 @@ const About = () => {
                 <div className="skills-container">
                     <div className="skill-row1">
                         <div className="skill-groups1">
-                            <img src="./assets/images/javascript.svg" alt="" />
+                            <img src="./assets/images/javascript.svg" alt="javascript icon" />
                             <span>Javascript</span>
                         </div>
                         <div className="skill-groups1">
-                            <img src="./assets/images/react.svg" alt="" />
+                            <img src="./assets/images/react.svg" alt="react icon" />
                             <span>React</span>
                         </div>
                         <div className="skill-groups1">
-                            <img src="./assets/images/node.svg" alt="" />
+                            <img src="./assets/images/typescript.svg" alt="typescript icon" />
+                            <span>Typescript</span>
+                        </div>
+                        <div className="skill-groups1">
+                            <img src="./assets/images/node.svg" alt="node icon" />
                             <span>Node.js</span>
                         </div>
                         <div className="skill-groups1">
-                            <img src="./assets/images/sass.svg" alt="" />
-                            <span>SASS</span>
+                            <img src="./assets/images/express.svg" alt="express icon" />
+                            <span>Express</span>
                         </div>
                         <div className="skill-groups1">
-                            <img src="./assets/images/figma.svg" alt="" />
-                            <span>Figma</span>
+                            <img src="./assets/images/prisma.svg" alt="prisma icon" />
+                            <span>Prisma</span>
                         </div>
+                        
+                        
                     </div>
                     <div className="skill-row2">
-                        <div className="skill-groups1">
+                        {/* <div className="skill-groups1">
                             <img src="./assets/images/mongodb.svg" alt="" />
                             <span>MongoDB</span>
-                        </div>
-                        <div className="skill-groups1">
-                            <img src="./assets/images/postgresql.svg" alt="" />
+                        </div> */}
+                         <div className="skill-groups1">
+                            <img src="./assets/images/postgresql.svg" alt="postgress icon" />
                             <span>PostgreSQL</span>
                         </div>
                         <div className="skill-groups1">
-                            <img src="./assets/images/html.svg" alt="" />
+                            <img src="./assets/images/sass.svg" alt="sass icon" />
+                            <span>SASS</span>
+                        </div>
+                        
+                        <div className="skill-groups1">
+                            <img src="./assets/images/figma.svg" alt="figma icon" />
+                            <span>Figma</span>
+                        </div>
+                        <div className="skill-groups1">
+                            <img src="./assets/images/html.svg" alt="html icon" />
                             <span>HTML</span>
                         </div>
                         <div className="skill-groups1">
-                            <img src="./assets/images/css.svg" alt="" />
+                            <img src="./assets/images/css.svg" alt="css icon" />
                             <span>CSS</span>
                         </div>
                         <div className="skill-groups1">
-                            <img src="./assets/images/bootstrap.svg" alt="" />
+                            <img src="./assets/images/bootstrap.svg" alt="bootstrap icon" />
                             <span>Bootstrap</span>
                         </div>
                     </div>

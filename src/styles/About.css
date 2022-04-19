@@ -85,7 +85,7 @@
 
 }
 .skills-container{
-    font-size: 2rem;
+    font-size: 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -93,7 +93,7 @@
 .skill-row1{
     display: flex;
     justify-content: flex-start;
-    gap: 3rem;
+    gap: 1rem;
 }
 
 .skill-row2{
@@ -102,11 +102,12 @@
     gap: 2rem;
 }
 
+
 .skill-groups1{
     background: #FFFFFF;
     box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.35);
     border-radius: 1rem;
-    width: 15.2rem;
+    width: 12.2rem;
     height: 5.6rem;
     display: flex;
     justify-content: center;
