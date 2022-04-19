@@ -1,4 +1,6 @@
 import '../styles/Home.css';
+import { Link } from 'react-router-dom';
+import { PAGE_LINK } from '../config/config';
 
 const Home = () => {
   return (
@@ -8,8 +10,8 @@ const Home = () => {
         Software developer based in the UK
         </h3>
         <div className="btn-container">
-            <div className="btn btn-project">View Projects</div>
-            <div className="btn btn-contact">Contact</div>
+            <Link className="btn btn-project" to={PAGE_LINK.projects}>View Projects</Link>
+            <Link className="btn btn-contact" to={PAGE_LINK.contact}>Contact</Link>
         </div>
     </div>
   )
