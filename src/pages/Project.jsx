@@ -1,6 +1,8 @@
 import React from "react";
-import "../styles/Project.css";
 import { BsArrowRight } from "react-icons/bs";
+
+import "../styles/Project.css";
+
 import { projects } from "../data/projectData";
 
 const Project = () => {
@@ -30,7 +32,12 @@ const Project = () => {
 										</span>
 									</div>
 									<div className="project-text-code">
-										<a href={project.github_link} className="github-link" target='_blank' rel="noreferrer">
+										<a
+											href={project.github_link}
+											className="github-link"
+											target="_blank"
+											rel="noreferrer"
+										>
 											<span>Code</span>
 											<span>
 												<BsArrowRight />

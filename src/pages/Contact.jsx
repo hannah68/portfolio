@@ -1,5 +1,7 @@
 import React from "react";
+
 import "../styles/Contact.css";
+
 import { social_icons } from "../data/aboutData";
 
 const Contact = () => {
@@ -12,7 +14,12 @@ const Contact = () => {
 					<div className="contacts-media-link">
 						{social_icons.map((icon, index) => {
 							return (
-								<a href={icon.link} key={index} target='_blank' rel="noreferrer">
+								<a
+									href={icon.link}
+									key={index}
+									target="_blank"
+									rel="noreferrer"
+								>
 									<img src={icon.logo} alt={icon.alt} />
 								</a>
 							);

@@ -1,71 +1,70 @@
-.contact-page{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12rem;
-    color: #5B3703;
-    height: 50vh;
-    margin: 0;
+.contact-page {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 12rem;
+	color: #5b3703;
+	height: 50vh;
+	margin: 0;
 }
 
-.contact-page h1{
-    font-size: 6.4rem;
-    background: linear-gradient(105deg, #FF512F 0%, #F09819 100%);
-    -webkit-background-clip: text;
-    background-clip:text;
-    color: transparent
-
+.contact-page h1 {
+	font-size: 6.4rem;
+	background: linear-gradient(105deg, #ff512f 0%, #f09819 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
 }
 
-.contacts{
-    font-size: 3.6rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+.contacts {
+	font-size: 3.6rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
 }
 
-.contacts-email{
-    display: flex;
-    gap: 1rem;
+.contacts-email {
+	display: flex;
+	gap: 1rem;
 }
 
-.contacts-media-link{
-    display: flex;
-    gap: 1rem;
-    margin-top: 2rem;
+.contacts-media-link {
+	display: flex;
+	gap: 1rem;
+	margin-top: 2rem;
 }
-
+/* media query */
 @media only screen and (max-width: 806px) {
-    .contact-page{
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 2rem;
-        height: auto;
-        margin-top: 6rem;
-    }
-    .contacts-media-link{
-        justify-content: center;
-    }
+	.contact-page {
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 2rem;
+		height: auto;
+		margin-top: 6rem;
+	}
+	.contacts-media-link {
+		justify-content: center;
+	}
 }
 
 @media only screen and (max-width: 580px) {
-    .contact-page h1{
-        font-size: 4rem;
-    }
-    .contacts{
-        font-size: 2.5rem;
-    }
+	.contact-page h1 {
+		font-size: 4rem;
+	}
+	.contacts {
+		font-size: 2.5rem;
+	}
 }
 
 @media only screen and (max-width: 292px) {
-    .contact-page h1{
-        font-size: 3rem;
-    }
-    .contacts{
-        font-size: 2rem;
-    }
-    .contacts-media-link img{
-        width: 3rem;
-        height: 3rem;
-    }
+	.contact-page h1 {
+		font-size: 3rem;
+	}
+	.contacts {
+		font-size: 2rem;
+	}
+	.contacts-media-link img {
+		width: 3rem;
+		height: 3rem;
+	}
 }
