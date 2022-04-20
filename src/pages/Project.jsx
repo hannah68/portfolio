@@ -26,10 +26,17 @@ const Project = () => {
 								<p className="project-text-detail">{project.text}</p>
 								<div className="project-text-show">
 									<div className="project-text-demo">
-										<span>Demo</span>
-										<span>
-											<BsArrowRight />
-										</span>
+										<a
+											href={project.demo_link}
+											className="demo-link"
+											target="_blank"
+											rel="noreferrer"
+										>
+											<span>Demo</span>
+											<span>
+												<BsArrowRight />
+											</span>
+										</a>
 									</div>
 									<div className="project-text-code">
 										<a

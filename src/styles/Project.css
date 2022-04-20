@@ -70,15 +70,13 @@
 	cursor: pointer;
 }
 
-.project-text-demo {
-	color: grey;
-	cursor: none;
-}
 
-.github-link {
+.github-link,
+.demo-link{
 	color: #000;
 	text-decoration: none;
 }
+
 /* media query */
 @media only screen and (max-width: 1238px) {
 	.project-page {
