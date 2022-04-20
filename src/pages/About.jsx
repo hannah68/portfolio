@@ -29,10 +29,10 @@ const About = () => {
 					<h1 className="about-text-title">ABOUT</h1>
 					<span className="about-text-subtitle">myself</span>
 					<p className="about-text-info">
-                    I'm a junior full stack developer. I studied marketing, but I found my passion for web development. I started my journey as a self-taught and then completed an intensive coding bootcamp with Boolean Uk.
+                    I'm a junior full stack developer. I studied marketing, but I found my passion for web development. I started my journey by self-training and then successfully completed an intensive coding bootcamp with Boolean, UK.
 					</p>
                     <br/>
-                    <p className="about-text-info">Throughout my time with boolean, I have thoroughly enjoyed learning new programming languages and look forward to continuing to develop my technical skills even further. I describe myself as someone who always has a positive attitude and is not afraid to try new things.</p>
+                    <p className="about-text-info">Throughout my time with Boolean, I thoroughly enjoyed learning new programming languages and I look forward to continuing the development of my technical skills even further. I describe myself as someone who always has a positive attitude and is not afraid to try new things.</p>
 				</div>
 			</div>
 			<div className="about-skills">

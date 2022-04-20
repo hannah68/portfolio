@@ -34,3 +34,38 @@
     gap: 1rem;
     margin-top: 2rem;
 }
+
+@media only screen and (max-width: 806px) {
+    .contact-page{
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+        height: auto;
+        margin-top: 6rem;
+    }
+    .contacts-media-link{
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .contact-page h1{
+        font-size: 4rem;
+    }
+    .contacts{
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 292px) {
+    .contact-page h1{
+        font-size: 3rem;
+    }
+    .contacts{
+        font-size: 2rem;
+    }
+    .contacts-media-link img{
+        width: 3rem;
+        height: 3rem;
+    }
+}

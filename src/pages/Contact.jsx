@@ -8,7 +8,7 @@ const Contact = () => {
 			<h1>Let's Talk!</h1>
 			<div className="contacts">
 				<div className="contacts-media">
-					<p>Get connected with me</p>
+					<p>Get in touch with me</p>
 					<div className="contacts-media-link">
 						{social_icons.map((icon, index) => {
 							return (

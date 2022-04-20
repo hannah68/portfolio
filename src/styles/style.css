@@ -133,3 +133,21 @@ main {
         background-color: #FFDBBA;
     }
 }
+
+@media only screen and (max-width: 318px) {
+    .navbar__logo{
+        width: 4rem;
+    }
+    .menu{
+        width: 3rem;
+    }
+    .navbar{
+        padding: 3rem 2rem 0 2rem;
+    }
+    .hamburger{
+        padding: 0;
+        right: 2rem;
+        top: 50%;
+    }
+    
+}

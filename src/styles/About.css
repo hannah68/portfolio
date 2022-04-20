@@ -117,3 +117,115 @@
     align-items: center;
     gap: 5px;
 }
+
+@media only screen and (max-width: 1022px) {
+    .about-infos{
+        gap: 6rem;
+    }
+    .about-page{
+        gap: 6rem;
+        padding: 5rem;
+    }
+    .about-img{
+        width: 18rem;
+    }
+    .about-text-title{
+        font-size: 6rem;
+    }
+    .about-text-subtitle{
+        font-size: 2rem;
+    }
+    .about-text-info{
+        font-size: 1.7rem;
+    }
+    .about-skills h2{
+        font-size: 3rem;
+    }
+    .skill-groups1{
+        width: 11rem;
+    }
+    .skill-groups1 img{
+        width: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 942px) {
+    .about-infos{
+        flex-direction: column;
+    }
+    .about-page{
+        margin-top: 2rem;
+    }
+    .about-skills h2{
+        text-align: center;
+    }
+    .skills-container{
+        gap: 1rem;
+    }
+    .skill-row1,
+    .skill-row2{
+        display: grid;
+        grid-template-columns: repeat(3, 11rem);
+        justify-content: center;
+        gap: 1rem;
+    }
+    .about-page{
+        width: 59rem;
+        padding: 3rem 0;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 648px) {
+    .about-page{
+        width: 40rem;
+    }
+    .about-text-info{
+        width: 40rem;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .about-img{
+        width: 12rem;
+        margin: 0 auto;
+    }
+    .about-text-title{
+        font-size: 4.5rem;
+    }
+    .about-text-subtitle{
+        font-size: 1.5rem;
+    }
+    .about-text-info{
+        font-size: 1.5rem;
+    }
+    .about-skills h2{
+        font-size: 3rem;
+    }
+    .skill-row1,
+    .skill-row2{
+        grid-template-columns: repeat(2, 11rem);
+    }
+    .about-page,
+    .about-text-info{
+        width: 30rem;
+    }
+    .about-social-icons a{
+        font-size: 3rem;
+    }
+    .about-infos{
+        gap: 1rem;
+    }
+}
+
+@media only screen and (max-width: 318px) {
+    .about-social-icons img{
+        width: 3rem;
+    }
+    .about-skills h2{
+        font-size: 2.6rem;
+    }
+    .about-text-info{
+        width: 28rem;
+    }
+}
