@@ -26,7 +26,8 @@ const Project = () => {
 								<p className="project-text-detail">{project.text}</p>
 								<div className="project-text-show">
 									<div className="project-text-demo">
-										<a
+										{project.demo_link.length > 0 && (
+											<a
 											href={project.demo_link}
 											className="demo-link"
 											target="_blank"
@@ -37,6 +38,8 @@ const Project = () => {
 												<BsArrowRight />
 											</span>
 										</a>
+										)}
+										
 									</div>
 									<div className="project-text-code">
 										<a
