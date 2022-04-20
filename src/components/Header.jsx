@@ -5,7 +5,7 @@ import {GrMenu} from 'react-icons/gr';
 
 const Header = () => {
     const [isNavExpanded, setIsNavExpanded] = useState(false);
-
+ 
   return (
     <header>
         <nav className="navbar">
@@ -20,16 +20,16 @@ const Header = () => {
 
             <ul className={isNavExpanded ? 'navbar__lists expanded': 'navbar__lists'}>
                 <li className="navbar__lists--item">
-                    <Link to='/'>Home</Link>
+                    <Link to='/' onClick={() => setIsNavExpanded(false)}>Home</Link>
                 </li>
                 <li className="navbar__lists--item">
-                    <Link to='/about'>About me</Link>
+                    <Link to='/about' onClick={() => setIsNavExpanded(false)}>About me</Link>
                 </li>
                 <li className="navbar__lists--item">
-                    <Link to='/projects'>Projects</Link>
+                    <Link to='/projects' onClick={() => setIsNavExpanded(false)}>Projects</Link>
                 </li>
                 <li className="navbar__lists--item">
-                    <Link to='/contact'>Contact</Link>
+                    <Link to='/contact' onClick={() => setIsNavExpanded(false)}>Contact</Link>
                 </li>
             </ul>
         </nav>

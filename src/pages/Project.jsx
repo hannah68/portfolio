@@ -30,10 +30,12 @@ const Project = () => {
 										</span>
 									</div>
 									<div className="project-text-code">
-										<span>Code</span>
-										<span>
-											<BsArrowRight />
-										</span>
+										<a href={project.github_link} className="github-link" target='_blank' rel="noreferrer">
+											<span>Code</span>
+											<span>
+												<BsArrowRight />
+											</span>
+										</a>
 									</div>
 								</div>
 							</div>
