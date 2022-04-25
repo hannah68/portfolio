@@ -39,7 +39,7 @@ export const projects = [
 		],
 		text: "As a first full-stack group project, we created a pokemon forum with a custom backend API. We used React in the front end and PostgreSQL along with Express in the back end. I mainly worked on the front end tasks and on the forum.",
 		github_link: "https://github.com/hannah68/project-team-fullstack",
-		demo_link: "",
+		demo_link: "https://pokemon-forum.herokuapp.com/",
 	},
 	{
 		title: "My Portfolio Website",
