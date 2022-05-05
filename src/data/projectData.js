@@ -49,4 +49,19 @@ export const projects = [
 		github_link: "https://github.com/hannah68/My-Portfolio",
 		demo_link: "https://reihaneh-portfolio.netlify.app/",
 	},
+	{
+		title: "TravelGo Website",
+		img: "./assets/images/travelGo.png",
+		tags: [
+			"HTML",
+			"CSS",
+			"REACT",
+			"JAVASCRIPT",
+			"FIGMA",
+			"STYLED COMPONENT",
+		],
+		text: "TravelGo is a travel agancy website built with styled component.",
+		github_link: "https://github.com/hannah68/TravelGo",
+		demo_link: "",
+	},
 ];
