@@ -66,7 +66,7 @@ export const projects = [
 	},
 	{
 		title: "Personal Blog",
-		img: "./assets/images/blog-bg",
+		img: "./assets/images/blog-bg.png",
 		tags: [
 			"HTML",
 			"CSS",
