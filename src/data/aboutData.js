@@ -1,4 +1,4 @@
-export const group_icons1 = [
+export const group_icons = [
 	{
 		img: "./assets/icons/javascript.svg",
 		title: "Javascript",
@@ -8,6 +8,11 @@ export const group_icons1 = [
 		img: "./assets/icons/react.svg",
 		title: "React",
 		alt: "React icon",
+	},
+	{
+		img: "./assets/icons/angular.svg",
+		title: "Angular",
+		alt: "Angular icon",
 	},
 	{
 		img: "./assets/icons/typescript.svg",
@@ -29,9 +34,6 @@ export const group_icons1 = [
 		title: "Prisma",
 		alt: "Prisma icon",
 	},
-];
-
-export const group_icons2 = [
 	{
 		img: "./assets/icons/postgresql.svg",
 		title: "PostgreSQL",
@@ -41,6 +43,11 @@ export const group_icons2 = [
 		img: "./assets/icons/sass.svg",
 		title: "SASS",
 		alt: "SASS icon",
+	},
+	{
+		img: "./assets/icons/git.svg",
+		title: "Git",
+		alt: "Git icon",
 	},
 	{
 		img: "./assets/icons/figma.svg",

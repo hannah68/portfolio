@@ -1,5 +1,5 @@
 .about-page {
-	width: 93rem;
+	width: 100rem;
 	margin: 0 auto;
 	padding: 10rem 0;
 	display: flex;
@@ -15,12 +15,16 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 12rem;
+	gap: 17rem;
 }
 
 .about-text {
 	text-align: center;
 	position: relative;
+}
+
+.about-subtext{
+	display: block;
 }
 
 .about-text-title {
@@ -85,22 +89,16 @@
 .skills-container {
 	font-size: 1.5rem;
 	display: flex;
-	flex-direction: column;
 	gap: 3rem;
 }
-.skill-row1 {
+.skill-row {
 	display: flex;
-	justify-content: flex-start;
-	gap: 1rem;
-}
-
-.skill-row2 {
-	display: flex;
-	justify-content: flex-end;
-	gap: 2rem;
-}
-
-.skill-groups1 {
+	justify-content: center;
+	row-gap: 2.5rem;
+	column-gap: 2rem;
+	flex-wrap: wrap;
+}  
+.skill-groups {
 	background: #ffffff;
 	box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.35);
 	border-radius: 1rem;
@@ -135,10 +133,10 @@
 	.about-skills h2 {
 		font-size: 3rem;
 	}
-	.skill-groups1 {
+	.skill-groups {
 		width: 11rem;
 	}
-	.skill-groups1 img {
+	.skill-groups img {
 		width: 2.5rem;
 	}
 }
@@ -154,13 +152,6 @@
 		text-align: center;
 	}
 	.skills-container {
-		gap: 1rem;
-	}
-	.skill-row1,
-	.skill-row2 {
-		display: grid;
-		grid-template-columns: repeat(3, 11rem);
-		justify-content: center;
 		gap: 1rem;
 	}
 	.about-page {
@@ -195,10 +186,6 @@
 	}
 	.about-skills h2 {
 		font-size: 3rem;
-	}
-	.skill-row1,
-	.skill-row2 {
-		grid-template-columns: repeat(2, 11rem);
 	}
 	.about-page,
 	.about-text-info {
