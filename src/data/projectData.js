@@ -50,6 +50,21 @@ export const projects = [
 		demo_link: "",
 	},
 	{
+		title: "TravelGo Website",
+		img: "./assets/images/travelGo.png",
+		tags: [
+			"HTML",
+			"CSS",
+			"REACT",
+			"JAVASCRIPT",
+			"FIGMA",
+			"STYLED COMPONENT",
+		],
+		text: "TravelGo is a travel agancy website built with styled component.",
+		github_link: "https://github.com/hannah68/TravelGo",
+		demo_link: "",
+	},
+	{
 		title: "My Portfolio Website",
 		img: "./assets/images/portfolio.png",
 		tags: ["HTML", "CSS", "JAVASCRIPT", "SASS"],
@@ -60,13 +75,7 @@ export const projects = [
 	{
 		title: "Personal Blog",
 		img: "./assets/images/blog.png",
-		tags: [
-			"HTML",
-			"CSS",
-			"ANGULAR",
-			"JAVASCRIPT",
-			"FIGMA",
-		],
+		tags: ["HTML","CSS","ANGULAR","JAVASCRIPT","FIGMA",],
 		text: "Comming soon...",
 		github_link: "https://github.com/hannah68/personal-blog",
 		demo_link: "",
