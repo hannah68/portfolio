@@ -42,10 +42,10 @@ export const projects = [
 		demo_link: "https://pokemon-forum.herokuapp.com/",
 	},
 	{
-		title: "Shoprime",
+		title: "Shoprime Website",
 		img: "./assets/images/shopprime.png",
 		tags: ["HTML", "CSS", "JAVASCRIPT", "ANGULAR", "MATERIALUI", "TAILWINDCSS"],
-		text: "ShopPrime is an e-commerce single-page application (SPA) using Angular. I used TailwindCSS to customize and extend the design of Angular Material UI components.",
+		text: "Shoprime is an e-commerce single-page application (SPA) created using Angular. I also used TailwindCSS to customize and extend the design of Angular Material UI components.",
 		github_link: "https://github.com/hannah68/e-commerce_store",
 		demo_link: "",
 	},
