@@ -73,12 +73,4 @@ export const projects = [
 		github_link: "https://github.com/hannah68/My-Portfolio",
 		demo_link: "https://reihaneh-portfolio.netlify.app/",
 	},
-	{
-		title: "Personal Blog",
-		img: "./assets/images/blog.png",
-		tags: ["HTML","CSS","ANGULAR","JAVASCRIPT","FIGMA",],
-		text: "Comming soon...",
-		github_link: "https://github.com/hannah68/personal-blog",
-		demo_link: "",
-	},
 ];
