@@ -73,7 +73,7 @@ export const group_icons = [
 
 export const social_icons = [
 	{
-		link: "https://www.linkedin.com/in/reihaneh-hannah-naderi-58b136112/",
+		link: "https://www.linkedin.com/in/reihaneh-naderi-58b136112/",
 		logo: "./assets/icons/link.svg",
 		alt: "linkedin",
 	},
