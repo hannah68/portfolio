@@ -8,6 +8,7 @@ import About from "./pages/About";
 import Project from "./pages/Project";
 import Contact from "./pages/Contact";
 import ProtocolBuilder from "./pages/caseStudies/ProtocolBuilder";
+import Monitoring from "./pages/caseStudies/Monitoring";
 
 const App = () => {
 	return (
@@ -25,6 +26,7 @@ const App = () => {
 						path={PAGE_LINK.protocolBuilder}
 						element={<ProtocolBuilder />}
 					/>
+					<Route path={PAGE_LINK.monitoring} element={<Monitoring />} />
 				</Routes>
 			</main>
 		</div>

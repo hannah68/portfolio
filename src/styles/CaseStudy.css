@@ -572,6 +572,194 @@
 }
 
 /* =========================
+   TELEMETRY DIAGRAM
+========================= */
+
+.cs-telemetry-diagram {
+	margin-top: 4rem;
+}
+
+.cs-telemetry-full {
+	padding: 2.5rem;
+
+	border: 1px solid #eadfd5;
+	border-radius: 0.8rem;
+
+	background: rgba(255, 255, 255, 0.55);
+}
+
+.cs-telemetry-header {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	gap: 2rem;
+
+	margin-bottom: 2rem;
+}
+
+.cs-telemetry-header > div {
+	display: flex;
+	flex-direction: column;
+	gap: 0.4rem;
+}
+
+.cs-telemetry-header span {
+	font-size: 1.1rem;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+
+	color: #777;
+}
+
+.cs-telemetry-header strong {
+	font-size: 1.7rem;
+
+	color: #222;
+}
+
+.cs-telemetry-header .cs-telemetry-points {
+	font-family: "Roboto Mono", monospace;
+	font-size: 1.1rem;
+	font-weight: 500;
+	text-transform: none;
+	letter-spacing: 0;
+
+	color: #8b5201;
+}
+
+/* Timeline */
+
+.cs-telemetry-track {
+	position: relative;
+
+	height: 5rem;
+
+	overflow: hidden;
+
+	border: 1px solid #e4d5c8;
+	border-radius: 0.5rem;
+
+	background:
+		repeating-linear-gradient(
+			to right,
+			rgba(240, 152, 25, 0.08) 0,
+			rgba(240, 152, 25, 0.08) 1px,
+			transparent 1px,
+			transparent 5%
+		),
+		rgba(255, 219, 186, 0.15);
+}
+
+.cs-telemetry-window {
+	position: absolute;
+
+	left: 32%;
+	top: 0;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 18%;
+	height: 100%;
+
+	border-left: 2px solid #f09819;
+	border-right: 2px solid #f09819;
+
+	background: rgba(240, 152, 25, 0.18);
+}
+
+.cs-telemetry-window span {
+	font-size: 1rem;
+	font-weight: 700;
+	text-align: center;
+
+	color: #8b5201;
+}
+
+.cs-telemetry-axis {
+	display: flex;
+	justify-content: space-between;
+
+	margin-top: 0.8rem;
+}
+
+.cs-telemetry-axis span {
+	font-family: "Roboto Mono", monospace;
+	font-size: 1rem;
+
+	color: #777;
+}
+
+/* Processing flow */
+
+.cs-telemetry-flow {
+	display: grid;
+	grid-template-columns:
+		minmax(0, 1fr)
+		auto
+		minmax(0, 1fr)
+		auto
+		minmax(0, 1fr)
+		auto
+		minmax(0, 1fr);
+
+	align-items: center;
+
+	margin-top: 2rem;
+}
+
+.cs-telemetry-step {
+	min-height: 10rem;
+
+	padding: 1.5rem;
+
+	border: 1px solid #e4d5c8;
+	border-radius: 0.6rem;
+
+	background: rgba(255, 255, 255, 0.7);
+}
+
+.cs-telemetry-step > span {
+	display: block;
+
+	margin-bottom: 0.7rem;
+
+	font-size: 1rem;
+	font-weight: 700;
+
+	color: #f09819;
+}
+
+.cs-telemetry-step strong {
+	display: block;
+
+	margin-bottom: 0.5rem;
+
+	font-size: 1.25rem;
+	line-height: 1.4;
+
+	color: #333;
+}
+
+.cs-telemetry-step p {
+	margin: 0;
+
+	font-size: 1.1rem;
+	line-height: 1.5;
+
+	color: #666;
+}
+
+.cs-telemetry-flow-arrow {
+	padding: 0 0.7rem;
+
+	font-size: 1.8rem;
+
+	color: #d48516;
+}
+/* =========================
    TABLET
 ========================= */
 
@@ -622,6 +810,32 @@
 ========================= */
 
 @media only screen and (max-width: 650px) {
+	.cs-telemetry-header {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+
+	.cs-telemetry-window {
+		left: 25%;
+		width: 30%;
+	}
+
+	.cs-telemetry-flow {
+		grid-template-columns: 1fr;
+		gap: 1rem;
+	}
+
+	.cs-telemetry-step {
+		min-height: auto;
+	}
+
+	.cs-telemetry-flow-arrow {
+		padding: 0;
+
+		text-align: center;
+
+		transform: rotate(90deg);
+	}
 	.cs-page {
 		width: 88%;
 

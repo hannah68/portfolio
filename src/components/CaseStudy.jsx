@@ -84,6 +84,74 @@ const TransformationDiagram = () => {
 	);
 };
 
+const TelemetryDiagram = () => {
+	return (
+		<div className="cs-diagram cs-telemetry-diagram">
+			<p className="cs-diagram-label">Windowed telemetry strategy</p>
+
+			<div className="cs-telemetry-full">
+				<div className="cs-telemetry-header">
+					<div>
+						<span>Whole experiment</span>
+						<strong>10 hour run</strong>
+					</div>
+
+					<span className="cs-telemetry-points">36,000+ raw readings</span>
+				</div>
+
+				<div className="cs-telemetry-track">
+					<div className="cs-telemetry-window">
+						<span>15 min detail window</span>
+					</div>
+				</div>
+
+				<div className="cs-telemetry-axis">
+					<span>0h</span>
+					<span>5h</span>
+					<span>10h</span>
+				</div>
+			</div>
+
+			<div className="cs-telemetry-flow">
+				<div className="cs-telemetry-step">
+					<span>01</span>
+					<strong>Select window</strong>
+					<p>15 minute section</p>
+				</div>
+
+				<div className="cs-telemetry-flow-arrow">→</div>
+
+				<div className="cs-telemetry-step">
+					<span>02</span>
+					<strong>Choose resolution</strong>
+					<p>Target ~1,500 points</p>
+				</div>
+
+				<div className="cs-telemetry-flow-arrow">→</div>
+
+				<div className="cs-telemetry-step">
+					<span>03</span>
+					<strong>Request telemetry</strong>
+					<p>Backend aggregates</p>
+				</div>
+
+				<div className="cs-telemetry-flow-arrow">→</div>
+
+				<div className="cs-telemetry-step">
+					<span>04</span>
+					<strong>Cache window</strong>
+					<p>Reuse when revisited</p>
+				</div>
+			</div>
+
+			<p className="cs-diagram-caption">
+				The chart works with a detailed window instead of loading an entire
+				long-running experiment at full resolution.
+			</p>
+		</div>
+	);
+};
+
 const renderDiagram = (diagram) => {
 	switch (diagram) {
 		case "protocol":
@@ -92,11 +160,13 @@ const renderDiagram = (diagram) => {
 		case "transformation":
 			return <TransformationDiagram />;
 
+		case "telemetry":
+			return <TelemetryDiagram />;
+
 		default:
 			return null;
 	}
 };
-
 const CaseStudy = ({ study }) => {
 	return (
 		<article className="cs-page">
