@@ -4,10 +4,11 @@ import { BsArrowRight, BsGithub } from "react-icons/bs";
 import "../styles/Project.css";
 
 import { professionalWork, personalProjects } from "../data/projectData";
+import { Link } from "react-router-dom";
 
 const Project = () => {
 	return (
-		<main className="work-page">
+		<div className="work-page">
 			{/* =========================
 			    PROFESSIONAL WORK
 			========================= */}
@@ -44,14 +45,14 @@ const Project = () => {
 									))}
 								</div>
 
-								<a
+								<Link
 									className="case-study-link"
-									href={project.link}
+									to={project.link}
 									aria-label={`Read ${project.title} case study`}
 								>
 									Read case study
 									<BsArrowRight />
-								</a>
+								</Link>
 							</div>
 						</article>
 					))}
@@ -119,7 +120,7 @@ const Project = () => {
 					))}
 				</div>
 			</section>
-		</main>
+		</div>
 	);
 };
 

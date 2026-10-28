@@ -1,15 +1,17 @@
+import { PAGE_LINK } from "../config/config";
+
 export const professionalWork = [
 	{
 		title: "Visual Protocol Builder",
-		company: "BiologIC Technologies · Professional work ",
+		company: "BiologIC Technologies",
 		summary:
 			"A visual workflow builder for configuring complex bioprocessing protocols. I designed and built the frontend, working with software engineers and scientists to shape how protocol steps, triggers and connections should work.",
 		tags: ["React", "TypeScript", "React Flow", "React Hook Form", "Zod"],
-		link: "/work/protocol-builder",
+		link: PAGE_LINK.protocolBuilder,
 	},
 	{
 		title: "Real-Time Bioreactor Monitoring",
-		company: "BiologIC Technologies · Professional work",
+		company: "BiologIC Technologies",
 		summary:
 			"A monitoring experience for scientists to follow experiments and explore live bioreactor data. The work involved real-time data visualisation, configurable time ranges and workflows shaped by scientist and customer feedback.",
 		tags: [
@@ -19,13 +21,13 @@ export const professionalWork = [
 			"Chart.js",
 			"Real-time data",
 		],
-		link: "/work/monitoring",
+		link: PAGE_LINK.monitoring,
 	},
 	{
 		title: "Touchscreen Control Interface",
-		company: "BiologIC Technologies · Professional work",
+		company: "BiologIC Technologies",
 		summary:
-			"A touchscreen interface used with laboratory equipment. I worked with software, embedded and scientific teams to define the workflow, then designed and built the frontend around the constraints of a physical device.",
+			"A touchscreen interface for controlling laboratory equipment. I worked with a software engineer, embedded engineer and biologist to define the workflow, then designed and built the frontend around the constraints of a physical device.",
 		tags: [
 			"React",
 			"TypeScript",
@@ -33,7 +35,7 @@ export const professionalWork = [
 			"Touch UI",
 			"Hardware integration",
 		],
-		link: "/work/touchscreen",
+		link: PAGE_LINK.touchscreen,
 	},
 ];
 

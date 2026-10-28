@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { GrMenu } from "react-icons/gr";
 
-import "../styles/Home.css";
+import "../styles/Header.css";
 
 import { PAGE_LINK } from "../config/config";
 
@@ -42,10 +42,7 @@ const Header = () => {
 						</Link>
 					</li>
 					<li className="navbar__lists--item">
-						<Link
-							to={PAGE_LINK.projects}
-							onClick={() => setIsNavExpanded(false)}
-						>
+						<Link to={PAGE_LINK.work} onClick={() => setIsNavExpanded(false)}>
 							Work
 						</Link>
 					</li>
