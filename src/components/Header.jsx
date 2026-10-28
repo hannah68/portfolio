@@ -38,7 +38,7 @@ const Header = () => {
 					</li>
 					<li className="navbar__lists--item">
 						<Link to={PAGE_LINK.about} onClick={() => setIsNavExpanded(false)}>
-							About me
+							About
 						</Link>
 					</li>
 					<li className="navbar__lists--item">
@@ -46,7 +46,7 @@ const Header = () => {
 							to={PAGE_LINK.projects}
 							onClick={() => setIsNavExpanded(false)}
 						>
-							Projects
+							Work
 						</Link>
 					</li>
 					<li className="navbar__lists--item">
