@@ -152,6 +152,98 @@ const TelemetryDiagram = () => {
 	);
 };
 
+const DeviceWorkflowDiagram = () => {
+	return (
+		<div className="cs-diagram cs-device-workflow">
+			<p className="cs-diagram-label">Device workflow</p>
+
+			<div className="cs-device-flow">
+				<div className="cs-device-step">
+					<span>01</span>
+					<strong>Setup</strong>
+					<p>Check system & hardware</p>
+				</div>
+
+				<span className="cs-device-arrow">→</span>
+
+				<div className="cs-device-step">
+					<span>02</span>
+					<strong>Calibration</strong>
+					<p>Prepare sensors</p>
+				</div>
+
+				<span className="cs-device-arrow">→</span>
+
+				<div className="cs-device-step">
+					<span>03</span>
+					<strong>Parameters</strong>
+					<p>Configure operation</p>
+				</div>
+
+				<span className="cs-device-arrow">→</span>
+
+				<div className="cs-device-step">
+					<span>04</span>
+					<strong>Run</strong>
+					<p>Control bioreactors</p>
+				</div>
+			</div>
+
+			<p className="cs-diagram-caption">
+				The interface progressively guided scientists through preparing the
+				system before an experiment could run.
+			</p>
+		</div>
+	);
+};
+
+const TouchscreenStateDiagram = () => {
+	return (
+		<div className="cs-diagram cs-touchscreen-state">
+			<p className="cs-diagram-label">Workflow state</p>
+
+			<div className="cs-state-flow">
+				<div className="cs-state-card">
+					<span>Calibration</span>
+					<strong>Complete</strong>
+				</div>
+
+				<span className="cs-state-arrow">→</span>
+
+				<div className="cs-state-card">
+					<span>Parameters</span>
+					<strong>Unlocked</strong>
+				</div>
+
+				<span className="cs-state-arrow">→</span>
+
+				<div className="cs-state-card">
+					<span>Parameters</span>
+					<strong>Saved</strong>
+				</div>
+
+				<span className="cs-state-arrow">→</span>
+
+				<div className="cs-state-card">
+					<span>Run</span>
+					<strong>Unlocked</strong>
+				</div>
+			</div>
+
+			<div className="cs-state-rule">
+				<span>Experiment running</span>
+				<span>→</span>
+				<strong>Calibration locked</strong>
+			</div>
+
+			<p className="cs-diagram-caption">
+				Shared frontend state coordinated which parts of the device workflow
+				were available at each stage.
+			</p>
+		</div>
+	);
+};
+
 const renderDiagram = (diagram) => {
 	switch (diagram) {
 		case "protocol":
@@ -162,6 +254,12 @@ const renderDiagram = (diagram) => {
 
 		case "telemetry":
 			return <TelemetryDiagram />;
+
+		case "deviceWorkflow":
+			return <DeviceWorkflowDiagram />;
+
+		case "touchscreenState":
+			return <TouchscreenStateDiagram />;
 
 		default:
 			return null;

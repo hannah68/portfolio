@@ -1,7 +1,10 @@
 import React from "react";
 
-function TouchScreen() {
-	return <div>TouchScreen</div>;
-}
+import CaseStudy from "../../components/CaseStudy";
+import { touchscreenCaseStudy } from "../../data/touchscreenCaseStudy";
+
+const TouchScreen = () => {
+	return <CaseStudy study={touchscreenCaseStudy} />;
+};
 
 export default TouchScreen;

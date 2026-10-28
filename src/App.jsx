@@ -9,6 +9,7 @@ import Project from "./pages/Project";
 import Contact from "./pages/Contact";
 import ProtocolBuilder from "./pages/caseStudies/ProtocolBuilder";
 import Monitoring from "./pages/caseStudies/Monitoring";
+import TouchScreen from "./pages/caseStudies/TouchScreen";
 
 const App = () => {
 	return (
@@ -27,6 +28,7 @@ const App = () => {
 						element={<ProtocolBuilder />}
 					/>
 					<Route path={PAGE_LINK.monitoring} element={<Monitoring />} />
+					<Route path={PAGE_LINK.touchscreen} element={<TouchScreen />} />
 				</Routes>
 			</main>
 		</div>

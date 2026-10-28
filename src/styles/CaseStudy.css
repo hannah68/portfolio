@@ -759,6 +759,112 @@
 
 	color: #d48516;
 }
+
+/* =========================
+   DEVICE WORKFLOW
+========================= */
+
+.cs-device-flow,
+.cs-state-flow {
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+
+	margin-top: 2rem;
+}
+
+.cs-device-step,
+.cs-state-card {
+	flex: 1;
+
+	padding: 1.8rem;
+
+	border: 1px solid #e4d5c8;
+	border-radius: 0.6rem;
+
+	background: rgba(255, 255, 255, 0.7);
+}
+
+.cs-device-step > span {
+	display: block;
+
+	margin-bottom: 0.8rem;
+
+	font-size: 1rem;
+	font-weight: 700;
+
+	color: #f09819;
+}
+
+.cs-device-step strong,
+.cs-state-card strong {
+	display: block;
+
+	font-size: 1.35rem;
+
+	color: #333;
+}
+
+.cs-device-step p {
+	margin: 0.5rem 0 0;
+
+	font-size: 1.1rem;
+	line-height: 1.5;
+
+	color: #666;
+}
+
+.cs-device-arrow,
+.cs-state-arrow {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding: 0 0.8rem;
+
+	font-size: 1.6rem;
+
+	color: #d48516;
+}
+
+/* =========================
+   WORKFLOW STATE
+========================= */
+
+.cs-state-card span {
+	display: block;
+
+	margin-bottom: 0.6rem;
+
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+
+	color: #777;
+}
+
+.cs-state-rule {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1.5rem;
+
+	width: fit-content;
+
+	margin: 2rem auto 0;
+	padding: 1.2rem 1.8rem;
+
+	border: 1px solid #e4d5c8;
+	border-radius: 0.5rem;
+
+	background: rgba(255, 255, 255, 0.55);
+
+	font-size: 1.1rem;
+}
+
+.cs-state-rule strong {
+	color: #8b5201;
+}
 /* =========================
    TABLET
 ========================= */
@@ -808,6 +914,26 @@
 /* =========================
    MOBILE
 ========================= */
+@media (max-width: 768px) {
+	.cs-device-flow,
+	.cs-state-flow {
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.cs-device-arrow,
+	.cs-state-arrow {
+		padding: 0.3rem;
+
+		transform: rotate(90deg);
+	}
+
+	.cs-state-rule {
+		width: 100%;
+
+		flex-wrap: wrap;
+	}
+}
 
 @media only screen and (max-width: 650px) {
 	.cs-telemetry-header {
