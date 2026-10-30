@@ -41,7 +41,7 @@ export const protocolBuilderCaseStudy = {
 			paragraphs: [
 				"I worked with the other software engineers to define how the experiment-building workflow should operate and then translated those requirements into the frontend design.",
 
-				"Rather than presenting a protocol as a large configuration form, we chose a graph-based interaction where scientists could see individual steps and explicitly connect their dependencies.",
+				"Rather than presenting a protocol as a large configuration form, I chose a graph-based interaction where scientists could see individual steps and explicitly connect their dependencies.",
 
 				"I designed the frontend experience and built the implementation using React Flow. During development, I reviewed the workflow with a biologist and scientist. They liked the graph approach because the visual connections made it clearer what the experiment would do and how the steps related to one another.",
 			],
