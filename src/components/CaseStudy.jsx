@@ -1,0 +1,397 @@
+import { Link } from "react-router-dom";
+import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
+
+import "../styles/CaseStudy.css";
+import { PAGE_LINK } from "../config/config";
+
+const ProtocolGraphDiagram = () => {
+	return (
+		<div className="cs-diagram cs-protocol-diagram">
+			<p className="cs-diagram-label">Simplified protocol structure</p>
+
+			<div className="cs-protocol-flow">
+				<div className="cs-diagram-node">
+					<span>01</span>
+					<strong>Module Task</strong>
+				</div>
+
+				<div className="cs-diagram-arrow">→</div>
+
+				<div className="cs-diagram-node">
+					<span>02</span>
+					<strong>Transfer</strong>
+				</div>
+
+				<div className="cs-diagram-arrow">→</div>
+
+				<div className="cs-diagram-node">
+					<span>03</span>
+					<strong>Module Task</strong>
+				</div>
+
+				<div className="cs-diagram-branch">
+					<div className="cs-diagram-arrow cs-diagram-arrow--down">↓</div>
+
+					<div className="cs-diagram-node">
+						<span>04</span>
+						<strong>User Step</strong>
+					</div>
+				</div>
+			</div>
+
+			<p className="cs-diagram-caption">
+				Simplified illustration of the graph-based protocol model. Not the
+				production interface.
+			</p>
+		</div>
+	);
+};
+
+const TransformationDiagram = () => {
+	return (
+		<div className="cs-diagram cs-transformation-diagram">
+			<div className="cs-transformation-block">
+				<span>Frontend</span>
+				<strong>Visual Graph</strong>
+				<p>Nodes + connections + positions</p>
+			</div>
+
+			<div className="cs-transformation-arrow">
+				<span>↓</span>
+			</div>
+
+			<div className="cs-transformation-block cs-transformation-block--middle">
+				<span>Frontend logic</span>
+				<strong>Transformation Layer</strong>
+				<p>Translate between representations</p>
+			</div>
+
+			<div className="cs-transformation-arrow">
+				<span>↓</span>
+			</div>
+
+			<div className="cs-transformation-block">
+				<span>Backend</span>
+				<strong>API Model</strong>
+				<p>Steps + connections + vessel slots</p>
+			</div>
+
+			<p className="cs-diagram-caption">
+				The frontend and API represent the same protocol differently, so a
+				transformation layer keeps the two models separate.
+			</p>
+		</div>
+	);
+};
+
+const TelemetryDiagram = () => {
+	return (
+		<div className="cs-diagram cs-telemetry-diagram">
+			<p className="cs-diagram-label">Windowed telemetry strategy</p>
+
+			<div className="cs-telemetry-full">
+				<div className="cs-telemetry-header">
+					<div>
+						<span>Whole experiment</span>
+						<strong>10 hour run</strong>
+					</div>
+
+					<span className="cs-telemetry-points">36,000+ raw readings</span>
+				</div>
+
+				<div className="cs-telemetry-track">
+					<div className="cs-telemetry-window">
+						<span>15 min detail window</span>
+					</div>
+				</div>
+
+				<div className="cs-telemetry-axis">
+					<span>0h</span>
+					<span>5h</span>
+					<span>10h</span>
+				</div>
+			</div>
+
+			<div className="cs-telemetry-flow">
+				<div className="cs-telemetry-step">
+					<span>01</span>
+					<strong>Select window</strong>
+					<p>15 minute section</p>
+				</div>
+
+				<div className="cs-telemetry-flow-arrow">→</div>
+
+				<div className="cs-telemetry-step">
+					<span>02</span>
+					<strong>Choose resolution</strong>
+					<p>Target ~1,500 points</p>
+				</div>
+
+				<div className="cs-telemetry-flow-arrow">→</div>
+
+				<div className="cs-telemetry-step">
+					<span>03</span>
+					<strong>Request telemetry</strong>
+					<p>Backend aggregates</p>
+				</div>
+
+				<div className="cs-telemetry-flow-arrow">→</div>
+
+				<div className="cs-telemetry-step">
+					<span>04</span>
+					<strong>Cache window</strong>
+					<p>Reuse when revisited</p>
+				</div>
+			</div>
+
+			<p className="cs-diagram-caption">
+				The chart works with a detailed window instead of loading an entire
+				long-running experiment at full resolution.
+			</p>
+		</div>
+	);
+};
+
+const DeviceWorkflowDiagram = () => {
+	return (
+		<div className="cs-diagram cs-device-workflow">
+			<p className="cs-diagram-label">Device workflow</p>
+
+			<div className="cs-device-flow">
+				<div className="cs-device-step">
+					<span>01</span>
+					<strong>Setup</strong>
+					<p>Check system & hardware</p>
+				</div>
+
+				<span className="cs-device-arrow">→</span>
+
+				<div className="cs-device-step">
+					<span>02</span>
+					<strong>Calibration</strong>
+					<p>Prepare sensors</p>
+				</div>
+
+				<span className="cs-device-arrow">→</span>
+
+				<div className="cs-device-step">
+					<span>03</span>
+					<strong>Parameters</strong>
+					<p>Configure operation</p>
+				</div>
+
+				<span className="cs-device-arrow">→</span>
+
+				<div className="cs-device-step">
+					<span>04</span>
+					<strong>Run</strong>
+					<p>Control bioreactors</p>
+				</div>
+			</div>
+
+			<p className="cs-diagram-caption">
+				The interface progressively guided scientists through preparing the
+				system before an experiment could run.
+			</p>
+		</div>
+	);
+};
+
+const TouchscreenStateDiagram = () => {
+	return (
+		<div className="cs-diagram cs-touchscreen-state">
+			<p className="cs-diagram-label">Workflow state</p>
+
+			<div className="cs-state-flow">
+				<div className="cs-state-card">
+					<span>Calibration</span>
+					<strong>Complete</strong>
+				</div>
+
+				<span className="cs-state-arrow">→</span>
+
+				<div className="cs-state-card">
+					<span>Parameters</span>
+					<strong>Unlocked</strong>
+				</div>
+
+				<span className="cs-state-arrow">→</span>
+
+				<div className="cs-state-card">
+					<span>Parameters</span>
+					<strong>Saved</strong>
+				</div>
+
+				<span className="cs-state-arrow">→</span>
+
+				<div className="cs-state-card">
+					<span>Run</span>
+					<strong>Unlocked</strong>
+				</div>
+			</div>
+
+			<div className="cs-state-rule">
+				<span>Experiment running</span>
+				<span>→</span>
+				<strong>Calibration locked</strong>
+			</div>
+
+			<p className="cs-diagram-caption">
+				Shared frontend state coordinated which parts of the device workflow
+				were available at each stage.
+			</p>
+		</div>
+	);
+};
+
+const renderDiagram = (diagram) => {
+	switch (diagram) {
+		case "protocol":
+			return <ProtocolGraphDiagram />;
+
+		case "transformation":
+			return <TransformationDiagram />;
+
+		case "telemetry":
+			return <TelemetryDiagram />;
+
+		case "deviceWorkflow":
+			return <DeviceWorkflowDiagram />;
+
+		case "touchscreenState":
+			return <TouchscreenStateDiagram />;
+
+		default:
+			return null;
+	}
+};
+const CaseStudy = ({ study }) => {
+	return (
+		<article className="cs-page">
+			<Link to={PAGE_LINK.work} className="cs-back">
+				<BsArrowLeft />
+				Back to work
+			</Link>
+
+			<header className="cs-hero">
+				<div className="cs-label">
+					<span>{study.number} /</span>
+					<span>Case Study</span>
+				</div>
+
+				<h1 className="cs-title">{study.title}</h1>
+
+				<p className="cs-subtitle">{study.subtitle}</p>
+
+				<div className="cs-meta">
+					<div className="cs-meta-item">
+						<span className="cs-meta-label">Role</span>
+						<p>{study.role}</p>
+					</div>
+
+					<div className="cs-meta-item">
+						<span className="cs-meta-label">Timeline</span>
+						<p>{study.development}</p>
+					</div>
+
+					<div className="cs-meta-item cs-meta-stack">
+						<span className="cs-meta-label">Stack</span>
+
+						<div className="cs-stack">
+							{study.stack.map((item) => (
+								<span key={item}>{item}</span>
+							))}
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div className="cs-body">
+				{study.sections.map((section, index) => (
+					<section
+						className={`cs-section ${
+							section.highlight ? "cs-section--highlight" : ""
+						}`}
+						key={`${section.title}-${index}`}
+					>
+						{section.eyebrow && <p className="cs-eyebrow">{section.eyebrow}</p>}
+
+						<div className="cs-section-content">
+							<h2>{section.title}</h2>
+
+							{section.intro && (
+								<p className="cs-section-intro">{section.intro}</p>
+							)}
+
+							{section.paragraphs?.map((paragraph, paragraphIndex) => (
+								<p key={paragraphIndex}>{paragraph}</p>
+							))}
+
+							{section.diagram && renderDiagram(section.diagram)}
+
+							{section.quote && (
+								<blockquote className="cs-highlight">
+									{section.quote}
+								</blockquote>
+							)}
+
+							{section.items && (
+								<ul className="cs-list">
+									{section.items.map((item) => (
+										<li key={item}>{item}</li>
+									))}
+								</ul>
+							)}
+
+							{section.subsections?.map((subsection, subsectionIndex) => (
+								<div
+									className="cs-subsection"
+									key={`${subsection.title}-${subsectionIndex}`}
+								>
+									{subsection.number && (
+										<span className="cs-subsection-number">
+											{subsection.number}
+										</span>
+									)}
+
+									<h3>{subsection.title}</h3>
+
+									{subsection.paragraphs?.map((paragraph, paragraphIndex) => (
+										<p key={paragraphIndex}>{paragraph}</p>
+									))}
+
+									{subsection.quote && (
+										<blockquote className="cs-highlight cs-highlight--small">
+											{subsection.quote}
+										</blockquote>
+									)}
+
+									{subsection.items && (
+										<ul className="cs-list">
+											{subsection.items.map((item) => (
+												<li key={item}>{item}</li>
+											))}
+										</ul>
+									)}
+								</div>
+							))}
+						</div>
+					</section>
+				))}
+			</div>
+
+			{study.next && (
+				<footer className="cs-next">
+					<span>Next case study</span>
+
+					<Link to={study.next.link}>
+						{study.next.title}
+						<BsArrowRight />
+					</Link>
+				</footer>
+			)}
+		</article>
+	);
+};
+
+export default CaseStudy;
